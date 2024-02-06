@@ -2,7 +2,7 @@ import path_manipule as pm
 
 PATH = r"C:/Users/David/Desktop/Projects/Java/Games/Nim/Nim/Move.java"
 
-
+# need to a reggex funk for find the num in start of lines
 def del_line_nums(line):
 
     spl = line.split(None, 1)
