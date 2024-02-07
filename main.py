@@ -1,13 +1,15 @@
 import path_manipule as pm
+import re
 
 PATH = r"C:/Users/David/Desktop/Projects/Java/Games/Nim/Nim/Move.java"
 
 # need to a reggex funk for find the num in start of lines
 def del_line_nums(line):
-
-    spl = line.split(None, 1)
+    pattern = r'\w+\s+'
+    spl = re.split(pattern, line, maxsplit=1)
     print(spl)
     return spl[1] if len(spl) >= 2 else ""
+    
 
 
 def action_on_line(line):
